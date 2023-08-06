@@ -1,0 +1,50 @@
+.nav-cover{
+    background-color: var(--primary);
+}
+
+.inner-cover{
+    width:996px;
+    margin: auto;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--white);
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+    position: relative;
+}
+
+.links a:after{
+    content: "";
+    position: absolute;
+    background-color: var(--white);
+    height: 1.5px;
+    width: 0%;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+.links a:hover::after{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+.inner-cover .links>ul{
+    display: flex;
+    gap: 32px;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    padding: 18px 0;
+}

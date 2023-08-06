@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@200;300;400;500&family=Inter:wght@200;300;400;500;700&family=Montserrat:wght@100;200;400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --primary:#5868FF;
+    --secondary:#91ABEE;
+    --dark:#1B1B1B;
+    --light:#EEF0FF;
+    --white: #FFF;
+    --ligt-pirple:#D7D7D8;
+    --background:#5262FE;
+    --light-gray:#B4B4B7;
+    --light-gray-mini:#8F8F90;
+}
+
+a{
+    color: var(--primary);
+    text-decoration: none;
+}

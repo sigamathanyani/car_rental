@@ -1,0 +1,22 @@
+<div class="cover">
+    <form #reg = "ngForm">
+        <div class="top-part">
+          <h2>Register Form</h2>  
+        </div>
+        
+        <div class="bottom-part">
+            <div class="inner-cover">
+
+                <input type="text" placeholder="Username" ngModel name="username">
+                <input type="text" placeholder="Email or Phone" ngModel name="email">
+                <input type="password" placeholder="Password" ngModel name="password">
+
+                <button type="submit" (click)="register(reg)">Register</button>
+
+                <p>Have an account? <a href="">Log In</a> </p>  
+            </div>            
+        </div>
+
+
+    </form>
+</div>

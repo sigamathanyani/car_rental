@@ -1,0 +1,22 @@
+<div class="cover">
+    <form #log = "ngForm">
+        <div class="top-part">
+          <h2>Log In Form</h2>  
+        </div>
+        
+        <div class="bottom-part">
+            <div class="inner-cover">
+
+                <input type="text" placeholder="Email or Phone" name="email" ngModel>
+                <input type="password" placeholder="Password" name="password" ngModel>
+                <a href="" id="forgot-pass">Forgot Password</a>
+
+                <button type="submit" (click)="loggingIn(log)">Register</button>
+
+                <p>Don't have an account? <a href="">Register</a> </p>  
+            </div>            
+        </div>
+
+
+    </form>
+</div>
