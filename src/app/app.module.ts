@@ -14,6 +14,8 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CarCatComponent } from './components/car-cat/car-cat.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomePageComponent,
     NavBarComponent,
     FooterComponent,
+    CarCatComponent,
+    FilterComponent,
   ],
   imports: [
     BrowserModule,
