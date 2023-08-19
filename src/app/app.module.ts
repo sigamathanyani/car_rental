@@ -16,6 +16,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { CarCatComponent } from './components/car-cat/car-cat.component';
 import { FilterComponent } from './components/filter/filter.component';
+import { CarComponent } from './components/car/car.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FilterComponent } from './components/filter/filter.component';
     FooterComponent,
     CarCatComponent,
     FilterComponent,
+    CarComponent,
   ],
   imports: [
     BrowserModule,
