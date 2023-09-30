@@ -43,7 +43,7 @@ li{
 
 .auth-btns{
     display: flex;
-    width: 15%;
+    width: auto;
     gap: 8px;
 }
 

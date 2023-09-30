@@ -15,13 +15,15 @@ export class LoginFormComponent {
   constructor(private _auth:AuthService, private route:Router){}
 
   loggingIn(user:NgForm){
+
     this.user = user.value;
+
     this._auth.logIn(this.user).subscribe((data:any)=>{
       if(data.token){
+        console.log("user Logged in");
+        
         localStorage.setItem("token",data.token);
         this.route.navigateByUrl('/home');
-      }else{
-        this.route.navigateByUrl('/');
       }
     }
 

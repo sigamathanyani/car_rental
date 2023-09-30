@@ -37,8 +37,10 @@ import { CarComponent } from './components/car/car.component';
     HttpClientModule,
     FontAwesomeModule,
     RouterModule.forRoot([
-      {path:'',component:AuthPageComponent},
+      {path:'',component:HomePageComponent},
       {path:'home',component:HomePageComponent},
+      {path:'register',component:AuthPageComponent},
+      {path:'login',component:AuthPageComponent},
     ])
   ],
   providers: [

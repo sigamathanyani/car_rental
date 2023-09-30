@@ -7,12 +7,8 @@
                 
             </div>
         </div>
-        <div class="grid cat large">
-            <app-car-cat></app-car-cat> 
-            <app-car-cat></app-car-cat> 
-            <app-car-cat></app-car-cat> 
-            <app-car-cat></app-car-cat> 
-            <app-car-cat></app-car-cat> 
+        <div class="grid cat large" >
+            <app-car-cat [category]="cat" *ngFor="let cat of car_cat"></app-car-cat> 
         </div>
         <div class="grid sort large"> 
             
@@ -32,7 +28,9 @@
         </div>
 
         <div class="grid cars large">
-            <app-car></app-car>     
+
+            <app-car [car]="c" *ngFor="let c of all_cars"></app-car>  
+    
             
         </div>
         <div class="grid pagination large">page</div>
@@ -40,5 +38,3 @@
 </div>
 
 <app-footer></app-footer>
-
-

@@ -10,27 +10,27 @@
                 <div class="btn promo">
                     <p>On Sale</p>
                 </div>
-                <h4>Toyota Yaris</h4>
+                <h4>{{car.car_name}} {{car.model}}</h4>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/person.svg" alt="">
                     <span>5 seats</span>
                 </div>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/petrol.svg" alt="">
-                    <span>Patrol</span>
+                    <span>{{car.gasoline}}</span>
                 </div>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/gears.svg" alt="">
-                    <span>Manual</span>
+                    <span>{{car.transmission}}</span>
                 </div>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/location.svg" alt="">
-                    <span>Pretoria North</span>
+                    <span>{{car.location}}</span>
                 </div>
             </div>
             <div class="right">
-                <p class="r-txt">price for 3 days</p>
-                <h3 class="r-txt">R 1204.23</h3>
+                <p class="r-txt">price per day</p>
+                <h3 class="r-txt">{{car.price | currency: " ZAR "}}</h3>
                 <span class="r-txt" style="color: green;"> ✔ Free Cancelation</span>
                 <div class="btn book">
                     <p>Book Now</p>
@@ -40,6 +40,21 @@
 
 
         <div class="footer">
+            <div class="left-info">
+                <div class="rate">
+                    9.8
+                </div>
+                <div class="rev">
+                    <h4>Perfect</h4>
+                    <p><a href="">6 Reviews</a></p>
+                </div>               
+            </div>
+            
+            <div class="right-info">
+                    <img class="icon" src="../../../assets/icons/info.svg" alt="">
+                    <a href=""><p>View more</p></a>
+                                       
+            </div>
 
         </div>
     </div>

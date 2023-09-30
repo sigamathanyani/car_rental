@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-car-cat',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./car-cat.component.css']
 })
 export class CarCatComponent {
-
+  @Input() category:string;
 }

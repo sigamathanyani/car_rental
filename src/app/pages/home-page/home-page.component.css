@@ -15,10 +15,6 @@
     'filter none none pages pages';
 }
 
-.grid{
-    border: 1px solid red;
-}
-
 .grid.map{
     grid-area: map;
     height: 150px;
