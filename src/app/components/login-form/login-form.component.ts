@@ -21,7 +21,6 @@ export class LoginFormComponent {
     this._auth.logIn(this.user).subscribe((data:any)=>{
       if(data.token){
         console.log("user Logged in");
-        
         localStorage.setItem("token",data.token);
         this.route.navigateByUrl('/home');
       }

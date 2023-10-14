@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit } from '@angular/core';
 import { HttpClient } from "@angular/common/http"
 import {Register} from "../models/register"
 import {Login} from "../models/login"
@@ -14,6 +14,7 @@ export class AuthService {
   constructor(private http:HttpClient) { 
     this.rootURL = "http://localhost:3000/api/auth";
     this.isAuth = localStorage.getItem('token');
+   
   }
 
   logIn(user:Login){
@@ -30,6 +31,7 @@ export class AuthService {
   }
 
   isAuthenticated(){
+    this.isAuth = localStorage.getItem('token');
     
     if(this.isAuth){
       return true;

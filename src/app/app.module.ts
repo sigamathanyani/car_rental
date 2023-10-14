@@ -17,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { CarCatComponent } from './components/car-cat/car-cat.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { CarComponent } from './components/car/car.component';
+import { AddCarComponent } from './pages/add-car/add-car.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { CarComponent } from './components/car/car.component';
     CarCatComponent,
     FilterComponent,
     CarComponent,
+    AddCarComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +43,7 @@ import { CarComponent } from './components/car/car.component';
       {path:'home',component:HomePageComponent},
       {path:'register',component:AuthPageComponent},
       {path:'login',component:AuthPageComponent},
+      {path:'add-car',component:AddCarComponent},
     ])
   ],
   providers: [

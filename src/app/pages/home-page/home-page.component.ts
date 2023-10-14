@@ -20,10 +20,13 @@ export class HomePageComponent implements OnInit{
 
   ngOnInit(): void {
 
-    if(!this._auth.isAuthenticated()){
-      this.route.navigateByUrl("/login")
-    }else{
+    if(this._auth.isAuthenticated()){
+      console.log("Yes");
       this.route.navigateByUrl("/home")
+      
+    }else{
+      console.log("No");
+      this.route.navigateByUrl("/login")
     }
 
 
