@@ -16,4 +16,8 @@ export class CarService {
     return this.http.get(`${this.rootURL}/`);
   }
 
+  addCar(carForm:any):Observable<any>{
+    return this.http.post(`${this.rootURL}/create-car`,carForm);
+  }
+
 }

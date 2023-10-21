@@ -18,6 +18,7 @@ import { CarCatComponent } from './components/car-cat/car-cat.component';
 import { FilterComponent } from './components/filter/filter.component';
 import { CarComponent } from './components/car/car.component';
 import { AddCarComponent } from './pages/add-car/add-car.component';
+import { CapitalizePipe } from './pipes/capitalize.pipe';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { AddCarComponent } from './pages/add-car/add-car.component';
     FilterComponent,
     CarComponent,
     AddCarComponent,
+    CapitalizePipe,
   ],
   imports: [
     BrowserModule,

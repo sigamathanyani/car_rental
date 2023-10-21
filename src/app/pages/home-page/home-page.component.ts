@@ -21,16 +21,11 @@ export class HomePageComponent implements OnInit{
   ngOnInit(): void {
 
     if(this._auth.isAuthenticated()){
-      console.log("Yes");
       this.route.navigateByUrl("/home")
       
     }else{
-      console.log("No");
       this.route.navigateByUrl("/login")
     }
-
-
-
 
     let container = L.DomUtil.get('map');
     if(container != null){
@@ -44,9 +39,7 @@ export class HomePageComponent implements OnInit{
 
 
   this.car_service.getCars().subscribe((cars)=>{
-    this.all_cars = cars;
-    console.log(this.all_cars);
-    
+    this.all_cars = cars
   })
 
   }

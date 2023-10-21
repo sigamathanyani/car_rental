@@ -10,22 +10,22 @@
                 <div class="btn promo">
                     <p>On Sale</p>
                 </div>
-                <h4>{{car.car_name}} {{car.model}}</h4>
+                <h4>{{car.car_name | capitalize}} {{car.model}}</h4>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/person.svg" alt="">
-                    <span>5 seats</span>
+                    <span>{{car.seats}} seats</span>
                 </div>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/petrol.svg" alt="">
-                    <span>{{car.gasoline}}</span>
+                    <span>{{car.gasoline | capitalize}}</span>
                 </div>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/gears.svg" alt="">
-                    <span>{{car.transmission}}</span>
+                    <span>{{car.transmission | capitalize}}</span>
                 </div>
                 <div class="icon-text">
                     <img class="icon" src="../../../assets/icons/location.svg" alt="">
-                    <span>{{car.location}}</span>
+                    <span>{{car.location.split(",")[1] | capitalize}}</span>
                 </div>
             </div>
             <div class="right">
@@ -41,12 +41,19 @@
 
         <div class="footer">
             <div class="left-info">
-                <div class="rate">
-                    9.8
+                <div class="rate" *ngIf="car.rate < 10 && car.rate > 0">
+                    {{car.rate | number:'1.1-1'}}
+                </div>
+                <div class="rate" *ngIf="car.rate == 10">
+                    {{car.rate}}
+                </div>
+                <div class="rate" *ngIf="!car.rate">
+                    0.0
                 </div>
                 <div class="rev">
                     <h4>Perfect</h4>
-                    <p><a href="">6 Reviews</a></p>
+                    <p><a href="" *ngIf="car.review_count == 1">{{car.review_count}} Review</a></p>
+                    <p><a href="" *ngIf="car.review_count > 1 || car.review_count == 0">{{car.review_count}} Reviews</a></p>
                 </div>               
             </div>
             
