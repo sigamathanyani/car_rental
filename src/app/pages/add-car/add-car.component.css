@@ -4,6 +4,12 @@
     box-sizing: border-box;
 }
 
+.main{
+    width: 100%;
+    height: auto;
+    background-color: #fdfdfd;
+}
+
 .back-icon{
     width: 15px;
     height: 15px;

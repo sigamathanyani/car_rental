@@ -52,14 +52,14 @@
                 </div>
                 <div class="rev">
                     <h4>Perfect</h4>
-                    <p><a href="" *ngIf="car.review_count == 1">{{car.review_count}} Review</a></p>
-                    <p><a href="" *ngIf="car.review_count > 1 || car.review_count == 0">{{car.review_count}} Reviews</a></p>
+                    <p><a routerLink="/car/{{car.car_id}}/reviews" *ngIf="car.review_count == 1">{{car.review_count}} Review</a></p>
+                    <p><a routerLink="/car/{{car.car_id}}/reviews" *ngIf="car.review_count > 1 || car.review_count == 0">{{car.review_count}} Reviews</a></p>
                 </div>               
             </div>
             
             <div class="right-info">
                     <img class="icon" src="../../../assets/icons/info.svg" alt="">
-                    <a href=""><p>View more</p></a>
+                    <a routerLink="/car/{{car.car_id}}"><p>View more</p></a>
                                        
             </div>
 

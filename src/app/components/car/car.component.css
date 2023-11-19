@@ -99,14 +99,21 @@ h3{
 }
 
 .btn.promo{
-    background-color: cadetblue;
+    background-color: #2ea44f;
     width: 50%;
     text-align: center;
+    color: var(--white);
 }
 .btn.book{
-    background-color: green;
+    background-color: var(--primary);
     color: white;
     margin-bottom: 6px;
+    padding: 8px 12px;
+    width: 7rem;
+    font-size: small;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
 }
 
 .footer{

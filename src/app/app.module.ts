@@ -19,6 +19,8 @@ import { FilterComponent } from './components/filter/filter.component';
 import { CarComponent } from './components/car/car.component';
 import { AddCarComponent } from './pages/add-car/add-car.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { SingleCarComponent } from './pages/single-car/single-car.component';
+import { CarReviewComponent } from './pages/car-review/car-review.component';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     CarComponent,
     AddCarComponent,
     CapitalizePipe,
+    SingleCarComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,8 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
       {path:'register',component:AuthPageComponent},
       {path:'login',component:AuthPageComponent},
       {path:'add-car',component:AddCarComponent},
+      {path:'car/:carID',component:SingleCarComponent},
+      {path:'car/:carID/reviews',component:CarReviewComponent},
     ])
   ],
   providers: [
