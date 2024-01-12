@@ -1,3 +1,4 @@
+<app-add-rev *ngIf="review.modalState$ | async"></app-add-rev>
 <div class="cover">
 
     <header>
@@ -42,65 +43,18 @@
                    
                 </div>
                 
-                <div class="comment">
+                <div class="comment" (click)="addRev()">
                     <p> Write A Review</p>
                 </div>
             </div>
-
-            <div class="revs">
-                <div class="title">
-                    <h4>Sigama Thanyani </h4><p>19 November 2023 at 09:35 AM</p>
-                    
-                </div>
-                <div class="review">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio amet porro natus est beatae ipsum autem laborum, exercitationem deleniti, minima illo ducimus voluptas id laboriosam vero perferendis alias architecto!
-                    </p>
-                    
-                </div>
+            <div class="" *ngIf="numOfRevs>0; else noReview">
+                <app-review [allReviews]="r" *ngFor="let r of all_revs"></app-review>
             </div>
 
-            <div class="revs">
-                <div class="title">
-                    <h4>Sigama Thanyani </h4><p>19 November 2023 at 09:35 AM</p>
-                    
-                </div>
-                <div class="review">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio amet porro natus est beatae ipsum autem laborum, exercitationem deleniti, minima illo ducimus voluptas id laboriosam vero perferendis alias architecto!
-                    </p>
-                    
-                </div>
-            </div>
-
-            <div class="revs">
-                <div class="title">
-                    <h4>Sigama Thanyani </h4><p>19 November 2023 at 09:35 AM</p>
-                    
-                </div>
-                <div class="review">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio amet porro natus est beatae ipsum autem laborum, exercitationem deleniti, minima illo ducimus voluptas id laboriosam vero perferendis alias architecto!
-                    </p>
-                    
-                </div>
-            </div>
-
-            <div class="revs">
-                <div class="title">
-                    <h4>Sigama Thanyani </h4><p>19 November 2023 at 09:35 AM</p>
-                    
-                </div>
-                <div class="review">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit distinctio amet porro natus est beatae ipsum autem laborum, exercitationem deleniti, minima illo ducimus voluptas id laboriosam vero perferendis alias architecto!
-                    </p>
-                    
-                </div>
-            </div>
-
+            <ng-template #noReview>No Review To Show</ng-template>
+                
         </div>
        
     </section>
 
-</div>
+</div> 

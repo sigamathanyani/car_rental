@@ -1,0 +1,11 @@
+<form #add_rev="ngForm">
+    <div class="container">
+        <div class="cover">
+            <textarea name="review" id="" cols="45" rows="10" ngModel></textarea>
+            <div class="btns">
+                <div class="rev-btns add-review" (click)="addReview(add_rev)">Add Review</div>
+                <div class="rev-btns cancel" (click)="hideModal()">Cancel</div>
+            </div>
+        </div>
+    </div>
+</form>

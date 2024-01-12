@@ -21,6 +21,8 @@ import { AddCarComponent } from './pages/add-car/add-car.component';
 import { CapitalizePipe } from './pipes/capitalize.pipe';
 import { SingleCarComponent } from './pages/single-car/single-car.component';
 import { CarReviewComponent } from './pages/car-review/car-review.component';
+import { ReviewComponent } from './components/review/review/review.component';
+import { AddRevComponent } from './components/add-rev/add-rev.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,9 @@ import { CarReviewComponent } from './pages/car-review/car-review.component';
     AddCarComponent,
     CapitalizePipe,
     SingleCarComponent,
+    ReviewComponent,
+    CarReviewComponent,
+    AddRevComponent,
   ],
   imports: [
     BrowserModule,
